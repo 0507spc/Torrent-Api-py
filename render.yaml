@@ -7,6 +7,6 @@ services:
     autoDeploy: true
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port 8009
-    env: 
-      - type: python
-        PYTHON_VERSION: 3.9.6
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.5
